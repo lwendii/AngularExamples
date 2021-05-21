@@ -7,18 +7,34 @@ import { AdminPageModule } from './_component/admin-page/admin-page.module';
 import { HomePageModule } from './_component/home-page/home-page.module';
 import { UserOverviewModule } from './_component/user-overview/user-overview.module';
 import { PageNotFoundComponent } from './_component/page-not-found/page-not-found.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavigationComponent } from './navigation/navigation.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
+    NavigationComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HomePageModule,
     UserOverviewModule,
-    AdminPageModule
+    AdminPageModule,
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
