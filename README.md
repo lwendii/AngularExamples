@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## CLI generated
+ng g module HomePage --routing
+ng g component UserOverview
+ng g class User --type=model
+ng g service User
+
+## Angular material
+ng add @angular/material
+ng g @angular/material:navigation navigation
