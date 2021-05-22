@@ -29,4 +29,11 @@ export class UserOverviewBasisComponent implements OnInit {
     this.dataSource.sort = this.sort;
   }
 
+  applyFilter(event: any) {
+    this.dataSource.filter = event.target.value.trim().toLowerCase();
+
+    if(this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
+  }
 }
