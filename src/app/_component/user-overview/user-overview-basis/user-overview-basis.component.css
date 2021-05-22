@@ -1,0 +1,15 @@
+.mat-column-id {
+    flex: 0 0 5%;
+}
+
+.mat-column-firstName {
+    flex: 0 0 30%;
+}
+
+.mat-column-lastName {
+    flex: 0 0 30%;
+}
+
+.mat-column-email { 
+    flex: 0 0 35%;
+}

@@ -6,6 +6,7 @@ import { UserOverviewBasisComponent } from './user-overview-basis/user-overview-
 
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     CommonModule,
     UserOverviewRoutingModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatSortModule
   ]
 })
 export class UserOverviewModule { }
