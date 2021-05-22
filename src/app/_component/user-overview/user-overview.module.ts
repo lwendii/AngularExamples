@@ -5,6 +5,7 @@ import { UserOverviewRoutingModule } from './user-overview-routing.module';
 import { UserOverviewBasisComponent } from './user-overview-basis/user-overview-basis.component';
 
 import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { MatTableModule } from '@angular/material/table';
   imports: [
     CommonModule,
     UserOverviewRoutingModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule
   ]
 })
 export class UserOverviewModule { }

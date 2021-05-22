@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { User } from 'src/app/_model/user.model';
 import { UserService } from 'src/app/_services/user.service';
@@ -9,15 +10,20 @@ import { UserService } from 'src/app/_services/user.service';
   styleUrls: ['./user-overview-basis.component.css']
 })
 export class UserOverviewBasisComponent implements OnInit {
+
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
   
   displayedColumns: string[] = ['id', 'firstName', 'lastName', 'email'];
-  dataSource: User[] = [];
+  dataSource!: MatTableDataSource<User>;
 
   constructor(private userService: UserService) { }
 
   ngOnInit(): void {
-    this.dataSource = this.userService.getUserList();
-    console.log(this.dataSource);
+    this.dataSource = new MatTableDataSource(this.userService.getUserList());
+  }
+
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
   }
 
 }
