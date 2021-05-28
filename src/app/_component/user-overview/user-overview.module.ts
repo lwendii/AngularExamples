@@ -12,6 +12,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DialogBodyComponent } from './dialog-body/dialog-body.component';
 
+import { MatCheckboxModule } from '@angular/material/checkbox';
+
 @NgModule({
   declarations: [
     UserOverviewBasisComponent,
@@ -26,6 +28,7 @@ import { DialogBodyComponent } from './dialog-body/dialog-body.component';
     MatFormFieldModule,
     MatInputModule,
     MatDialogModule,
+    MatCheckboxModule
   ]
 })
 export class UserOverviewModule { }

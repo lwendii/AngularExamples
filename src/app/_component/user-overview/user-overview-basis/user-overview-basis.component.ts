@@ -17,7 +17,7 @@ export class UserOverviewBasisComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
   
-  displayedColumns: string[] = ['id', 'firstName', 'lastName', 'email'];
+  displayedColumns: string[] = ['id', 'firstName', 'lastName', 'email', 'isAdmin'];
   dataSource!: MatTableDataSource<User>;
 
   constructor(private userService: UserService, private matDialog: MatDialog) { }

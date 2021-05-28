@@ -11,8 +11,8 @@ export class UserService {
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
   dummydata: User[] = [
-    new User(1, "John", "Doe", "john.doe@email.com"),
-    new User(2, "Jane", "Doe", "jane.doe@email.com")
+    new User(1, "John", "Doe", "john.doe@email.com", true),
+    new User(2, "Jane", "Doe", "jane.doe@email.com", false)
   ]
 
   constructor(private http: HttpClient) { }

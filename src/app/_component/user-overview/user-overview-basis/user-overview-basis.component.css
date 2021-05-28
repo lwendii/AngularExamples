@@ -11,5 +11,9 @@
 }
 
 .mat-column-email { 
-    flex: 0 0 35%;
+    flex: 0 0 30%;
+}
+
+.mat-column-isAdmin {
+    flex: 0 0 5%;
 }
