@@ -1,1 +1,10 @@
-<p>admin-page-basis works!</p>
+<h1>Admin Page</h1>
+<mat-tab-group (selectedTabChange)="onTabClick($event)">
+    <mat-tab label="Basic Setting">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </mat-tab>
+
+    <mat-tab label="Second Setting">
+        <app-user-overview-basis></app-user-overview-basis>
+    </mat-tab>
+</mat-tab-group>

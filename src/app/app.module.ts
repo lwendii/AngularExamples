@@ -18,10 +18,6 @@ import { MatListModule } from '@angular/material/list';
 import { UserService } from './_services/user.service';
 import { HttpClientModule } from '@angular/common/http';
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,8 +37,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    HttpClientModule
-
+    HttpClientModule,
   ],
   providers: [
     UserService,

@@ -1,8 +1,16 @@
-<h2 mat-dialog-title>Add new user</h2>
+<div style="min-width: 500px;">
+<div class="row" style="width: 100%;" mat-dialog-title>
+
+        <h2 >Add new user</h2>
+        <button mat-icon-button class="close()"><mat-icon>close</mat-icon></button>
+
+</div>
+
 <mat-dialog-content>
-    <p>Place content here</p>
+    <p>{{content}}</p>
 </mat-dialog-content>
 
-<mat-dialog-actions>
-    <button class="mat-raised-button" (click)="close()">Close</button>
+<mat-dialog-actions align="end">
+    <button class="mat-raised-button" (click)="openDialog()">Save</button>
 </mat-dialog-actions>
+</div>

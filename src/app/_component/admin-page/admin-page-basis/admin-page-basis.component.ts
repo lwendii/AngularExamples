@@ -12,4 +12,9 @@ export class AdminPageBasisComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onTabClick(event: { tab: { textLabel: any; }; }) {
+    console.log(event);
+    console.log(event.tab.textLabel);
+  }
+
 }
